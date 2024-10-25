@@ -25,7 +25,6 @@
 
     }else{
         echo "<p>Não existem categorias cadastradas</p>";
-        echo "<p>Não existem categorias cadastradas</p>";
     }
 
     ?>
