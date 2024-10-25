@@ -22,6 +22,9 @@
     $result = $conn->query("SELECT * FROM categoria");
 
     if($result->num_rows > 0){
+        while($row = $result->fetch_assoc()){
+            echo "<p>".$row["id"]." - ".$row["nome"]."</p>";;
+        }
 
     }else{
         echo "<p>Não existem categorias cadastradas</p>";
