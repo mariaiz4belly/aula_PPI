@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Calculadora INFO 4</h1>
+    <form action="calcular.php" method="post">
+        <p>
+            <label for="numero">Número 1:</label>
+            <input type="number" name="numero" id="numero" step="1" />
+        </p>
+
+        <p>
+            <label for="num">Número 2:</label>
+            <input type="number" name="num" id="num" step="1" />
+        </p>
+
+        <p>
+            Operações:<br />
+
+            <input type="radio" name="soma" value="Soma" id="s" />
+            <label for="s">Soma</label><br />
+
+            <input type="radio" name="subtracao" value="Subtração" id="sub" />
+            <label for="sub">Subtração</label><br />
+
+            <input type="radio" name="multiplicacao" value="Multiplicação" id="m" />
+            <label for="m">Multiplição</label><br />
+
+            <input type="radio" name="divisao" value="Divisão" id="d" />
+            <label for="s">Divisão</label><br />
+        </p>
+
+        <p>
+            <input type="submit" value="Calcular" />
+        </p>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='icon' type='text/css' media='screen' href='../info2024/img/logo.png'>
+    <title>Quiz</title>
+</head>
+
+<body>
+    <h1>Quiz</h1>
+</body>
+<form action="resultado.php" method="post">
+    <p>
+        <label for="nome">Discente:</label>
+        <input type="text" name="nome" id="nome" />
+    </p>
+
+    <p>
+        <label for="nascimento">Data de Nascimento:</label>
+        <input type="date" name="nascimento" id="nasc" />
+    </p>
+
+    <p>
+        <label for="curso">Curso:</label>
+        <select name="curso" id="curso" required>
+            <option value="Eletromecânica">Eletromecânica</option> <br />
+            <option value="Eventos">Eventos</option> <br />
+            <option value="Informática">Informática</option> <br />
+        </select>
+    </p>
+
+    <p>
+        <label for="idade">Matrícula:</label>
+        <input type="text" name="matricula" id="matricula" />
+    </p>
+
+    <p>
+        <b>Quiz de Química: Perguntas e Respostas.</b><br />
+        <br />
+        <b>1. Qual é a fórmula química da água?</b><br />
+        <input type="radio" name="q1" value="a" id="a" required />
+        <label for="a">A) H₂O₂</label><br />
+
+        <input type="radio" name="q1" value="b" id="b" required />
+        <label for="b">B) CO₂</label><br />
+
+        <input type="radio" name="q1" value="c" id="c" required />
+        <label for="c">C) H₂O</label><br />
+
+        <input type="radio" name="q1" value="c" id="d" required />
+        <label for="d">D) O₂</label><br />
+    </p>
+
+    <p>
+        <b>2. Qual é o elemento químico representado pelo símbolo "O"?</b><br />
+        <input type="radio" name="q2" value="a" id="a" required />
+        <label for="a">A) Ouro</label><br />
+
+        <input type="radio" name="q2" value="b" id="b" required />
+        <label for="b">B) Oxigênio</label><br />
+
+        <input type="radio" name="q2" value="c" id="c" required />
+        <label for="c">C) Ósmio</label><br />
+
+        <input type="radio" name="q2" value="c" id="d" required />
+        <label for="d">D) Oxalato</label><br />
+    </p>
+
+    <p>
+        <b>3. Qual é a principal função dos catalisadores em uma reação química?</b><br />
+        <input type="radio" name="q3" value="a" id="a" required />
+        <label for="a">A) Aumentar a temperatura</label><br />
+
+        <input type="radio" name="q3" value="b" id="b" required />
+        <label for="b">B) Diminuir a concentração dos reagentes</label><br />
+
+        <input type="radio" name="q3" value="c" id="c" required />
+        <label for="c">C) Aumentar a velocidade da reação</label><br />
+
+        <input type="radio" name="q4" value="c" id="d" required />
+        <label for="d">D) Tornar a reação exotérmica</label><br />
+    </p>
+
+    <p>
+        <b>4. Qual é o gás essencial para a respiração dos seres humanos?</b><br />
+        <input type="radio" name="q4" value="a" id="a" required />
+        <label for="a">A) Oxigênio</label><br />
+
+        <input type="radio" name="q4" value="b" id="b" required />
+        <label for="b">B) Nitrogênio</label><br />
+
+        <input type="radio" name="q4" value="c" id="c" required />
+        <label for="c">C) Dióxido de carbono</label><br />
+
+        <input type="radio" name="q4" value="c" id="d" required />
+        <label for="d">D) Hidrogênio</label><br />
+    </p>
+
+    <p>
+        <b>5. Qual é o elemento químico representado pelo símbolo “Fe”?</b><br />
+        <input type="radio" name="q5" value="a" id="a" required />
+        <label for="a">A) Ferro</label><br />
+
+        <input type="radio" name="q5" value="b" id="b" required />
+        <label for="b">B) Fósforo</label><br />
+
+        <input type="radio" name="q5" value="c" id="c" required />
+        <label for="c">C) Flúor</label><br />
+
+        <input type="radio" name="q4" value="c" id="d" required />
+        <label for="d">D) Fogo</label><br />
+    </p>
+
+    <p>
+        <input type="submit" value="Enviar" />
+    </p>
+
+</html>
