@@ -25,6 +25,7 @@
         while($row = $result->fetch_assoc()){
             echo "<p>";
             echo $row["id"]." - ".$row["nome"];
+            echo " <a href='categoria_adicionar.php?id=".$row["id"]."'>EDITAR</a>";
             echo " <a href='bd_categoria_remover.php?id=".$row["id"]."'>REMOVER</a>";
             echo "</p>";
         }

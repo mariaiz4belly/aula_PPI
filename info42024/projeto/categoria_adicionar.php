@@ -1,3 +1,25 @@
+<?php
+    $nome = "";
+    if(isset($_GET["id"])){
+        $id = $_GET["id"];
+
+        include "banco/conexao.php";
+
+        $conn = conectar();
+
+        $sql = "SELECT * FROM categoria WHERE id=$id";
+
+        $result = $conn->query($sql);
+
+        if($result->num_rows > 0){
+            while($row = $result->fetch_assoc()){
+                $nome = $row["nome"];
+            }
+        }
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +34,7 @@
     <form action="bd_categoria_adicionar.php" method="post">
         <p>
             <label for="cat">Nome:</label>
-            <input type="text" name="categoria" id="cat" />
+            <input type="text" name="categoria" id="cat" value="<?php echo $nome; ?>"/>
         </p>
 
         <p>
