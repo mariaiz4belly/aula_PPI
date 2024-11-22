@@ -23,7 +23,10 @@
 
     if($result->num_rows > 0){
         while($row = $result->fetch_assoc()){
-            echo "<p>".$row["id"]." - ".$row["nome"]."</p>";;
+            echo "<p>";
+            echo $row["id"]." - ".$row["nome"];
+            echo " <a href='bd_categoria_remover.php'>REMOVER</a>";
+            echo "</p>";
         }
 
     }else{
