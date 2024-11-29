@@ -31,7 +31,22 @@
 <body>
     <h1>Cadastrar Categoria</h1>
 
+    <?php
+    if(isset($_GET["id"])){
+    ?>
+
+    <form action="bd_categoria_editar.php" method="post">
+
+    <?php
+    echo "<input type='hidden' name='id' value='$id' />";
+    }else{
+    ?>
+
     <form action="bd_categoria_adicionar.php" method="post">
+
+    <?php
+    }
+    ?>
         <p>
             <label for="cat">Nome:</label>
             <input type="text" name="categoria" id="cat" value="<?php echo $nome; ?>"/>
